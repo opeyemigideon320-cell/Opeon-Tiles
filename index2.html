@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Tiles 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio controls src="music/its you.mp3" class="aud" autoplay></audio>
+    <div class="screen-size">
+        <div class="music"></div>
+        <div class="bg">
+        <div class="grid-line">
+            <input type="radio" id="tile-btn3" class="box3">
+            <label for="tile-btn3" class="tile3"></label>
+            <input type="radio" id="tile-btn6" class="box6">
+            <label for="tile-btn6" class="tile6"></label>
+            <input type="radio" id="tile-btn11" class="box11">
+            <label for="tile-btn11" class="tile11"></label>
+            <input type="radio" id="tile-btn15" class="box15">
+            <label for="tile-btn15" class="tile15"></label>
+            <input type="radio" id="tile-btn18" class="box18">
+            <label for="tile-btn18" class="tile18"></label>
+            <input type="radio" id="tile-btn23" class="box23">
+            <label for="tile-btn23" class="tile23"></label>
+            <input type="radio" id="tile-btn28" class="box28">
+            <label for="tile-btn28" class="tile28"></label>
+            <input type="radio" id="tile-btn30" class="box30">
+            <label for="tile-btn30" class="tile30"></label>
+            <input type="radio" id="tile-btn37" class="box37">
+            <label for="tile-btn37" class="tile37"></label>
+            <input type="radio" id="tile-btn40" class="box40">
+            <label for="tile-btn40" class="tile40"></label>
+            <input type="radio" id="tile-btn42" class="box42">
+            <label for="tile-btn42" class="tile42"></label>
+            <input type="radio" id="tile-btn47" class="box47">
+            <label for="tile-btn47" class="tile47"></label>
+            <input type="radio" id="tile-btn49" class="box49">
+            <label for="tile-btn49" class="tile49"></label>
+            <input type="radio" id="tile-btn53" class="box53">
+            <label for="tile-btn53" class="tile53"></label>
+            <input type="radio" id="tile-btn60" class="box60">
+            <label for="tile-btn60" class="tile60"></label>
+            <input type="radio" id="tile-btn67" class="box67">
+            <label for="tile-btn67" class="tile67"></label>
+            <input type="radio" id="tile-btn68" class="box68">
+            <label for="tile-btn68" class="tile68"></label>
+            <input type="radio" id="tile-btn72" class="box72">
+            <label for="tile-btn72" class="tile72"></label>
+            <input type="radio" id="tile-btn76" class="box76">
+            <label for="tile-btn76" class="tile76"></label>
+            <input type="radio" id="tile-btn79" class="box79">
+            <label for="tile-btn79" class="tile79"></label>
+            <input type="radio" id="tile-btn80" class="box80">
+            <label for="tile-btn80" class="tile80"></label>
+            <input type="radio" id="tile-btn90" class="box90">
+            <label for="tile-btn90" class="tile90"></label>
+            <input type="radio" id="tile-btn91" class="box91">
+            <label for="tile-btn91" class="tile91"></label>
+            <input type="radio" id="tile-btn96" class="box96">
+            <label for="tile-btn96" class="tile96"></label>
+            <input type="radio" id="tile-btn101" class="box101">
+            <label for="tile-btn101" class="tile101"></label>
+            <input type="radio" id="tile-btn102" class="box102">
+            <label for="tile-btn102" class="tile102"></label>
+            <input type="radio" id="tile-btn108" class="box108">
+            <label for="tile-btn108" class="tile108"></label>
+            <input type="radio" id="tile-btn110" class="box110">
+            <label for="tile-btn110" class="tile110"></label>
+            <input type="radio" id="tile-btn112" class="box112">
+            <label for="tile-btn112" class="tile112"></label>
+            <input type="radio" id="tile-btn126" class="box126">
+            <label for="tile-btn126" class="tile126"></label>
+            <input type="radio" id="tile-btn134" class="box134">
+            <label for="tile-btn134" class="tile134"></label>
+            <input type="radio" id="tile-btn138" class="box138">
+            <label for="tile-btn138" class="tile138"></label>
+            <input type="radio" id="tile-btn141" class="box141">
+            <label for="tile-btn141" class="tile141"></label>
+            <input type="radio" id="tile-btn145" class="box145">
+            <label for="tile-btn145" class="tile145"></label>
+            <input type="radio" id="tile-btn152" class="box152">
+            <label for="tile-btn152" class="tile152"></label>
+            <input type="radio" id="tile-btn153" class="box153">
+            <label for="tile-btn153" class="tile153"></label>
+            <input type="radio" id="tile-btn158" class="box158">
+            <label for="tile-btn158" class="tile158"></label>
+            <input type="radio" id="tile-btn165" class="box165">
+            <label for="tile-btn165" class="tile165"></label>
+            <input type="radio" id="tile-btn166" class="box166">
+            <label for="tile-btn166" class="tile166"></label>
+            <input type="radio" id="tile-btn169" class="box169">
+            <label for="tile-btn169" class="tile169"></label>
+            <input type="radio" id="tile-btn173" class="box173">
+            <label for="tile-btn173" class="tile173"></label>
+            <input type="radio" id="tile-btn174" class="box174">
+            <label for="tile-btn174" class="tile174"></label>
+            <input type="radio" id="tile-btn185" class="box185">
+            <label for="tile-btn185" class="tile185"></label>
+            <input type="radio" id="tile-btn189" class="box189">
+            <label for="tile-btn189" class="tile189"></label>
+            <input type="radio" id="tile-btn191" class="box191">
+            <label for="tile-btn191" class="tile191"></label>
+            <input type="radio" id="tile-btn192" class="box192">
+            <label for="tile-btn192" class="tile192"></label>
+            <input type="radio" id="tile-btn203" class="box203">
+            <label for="tile-btn203" class="tile203"></label>
+            <input type="radio" id="tile-btn206" class="box206">
+            <label for="tile-btn206" class="tile206"></label>
+            <input type="radio" id="tile-btn208" class="box208">
+            <label for="tile-btn208" class="tile208"></label>
+            <input type="radio" id="tile-btn209" class="box209">
+            <label for="tile-btn209" class="tile209"></label>
+            <input type="radio" id="tile-btn211" class="box211">
+            <label for="tile-btn211" class="tile211"></label>
+            <input type="radio" id="tile-btn223" class="box223">
+            <label for="tile-btn223" class="tile223"></label>
+            <input type="radio" id="tile-btn224" class="box224">
+            <label for="tile-btn224" class="tile224"></label>
+            <input type="radio" id="tile-btn226" class="box226">
+            <label for="tile-btn226" class="tile226"></label>
+            <input type="radio" id="tile-btn230" class="box230">
+            <label for="tile-btn230" class="tile230"></label>
+            <input type="radio" id="tile-btn239" class="box239">
+            <label for="tile-btn239" class="tile239"></label>
+            <input type="radio" id="tile-btn240" class="box240">
+            <label for="tile-btn240" class="tile240"></label>
+            <input type="radio" id="tile-btn242" class="box242">
+            <label for="tile-btn242" class="tile242"></label>
+            <input type="radio" id="tile-btn245" class="box245">
+            <label for="tile-btn245" class="tile245"></label>
+            <input type="radio" id="tile-btn247" class="box247">
+            <label for="tile-btn247" class="tile247"></label>
+            <input type="radio" id="tile-btn258" class="box258">
+            <label for="tile-btn258" class="tile258"></label>
+            <input type="radio" id="tile-btn259" class="box259">
+            <label for="tile-btn259" class="tile259"></label>
+            <input type="radio" id="tile-btn269" class="box269">
+            <label for="tile-btn269" class="tile269"></label>
+            <input type="radio" id="tile-btn271" class="box271">
+            <label for="tile-btn271" class="tile271"></label>
+            <input type="radio" id="tile-btn272" class="box272">
+            <label for="tile-btn272" class="tile272"></label>
+            <input type="radio" id="tile-btn274" class="box274">
+            <label for="tile-btn274" class="tile274"></label>
+            <input type="radio" id="tile-btn288" class="box288">
+            <label for="tile-btn288" class="tile288"></label>
+            <input type="radio" id="tile-btn291" class="box291">
+            <label for="tile-btn291" class="tile291"></label>
+            <input type="radio" id="tile-btn292" class="box292">
+            <label for="tile-btn292" class="tile292"></label>
+            <input type="radio" id="tile-btn294" class="box294">
+            <label for="tile-btn294" class="tile294"></label>
+            <input type="radio" id="tile-btn304" class="box304">
+            <label for="tile-btn304" class="tile304"></label>
+            <input type="radio" id="tile-btn307" class="box307">
+            <label for="tile-btn307" class="tile307"></label>
+            <input type="radio" id="tile-btn308" class="box308">
+            <label for="tile-btn308" class="tile308"></label>
+            <input type="radio" id="tile-btn311" class="box311">
+            <label for="tile-btn311" class="tile311"></label>
+            <input type="radio" id="tile-btn314" class="box314">
+            <label for="tile-btn314" class="tile314"></label>
+            <input type="radio" id="tile-btn318" class="box318">
+            <label for="tile-btn318" class="tile318"></label>
+            <input type="radio" id="tile-btn326" class="box326">
+            <label for="tile-btn326" class="tile326"></label>
+            <input type="radio" id="tile-btn330" class="box330">
+            <label for="tile-btn330" class="tile330"></label>
+            <input type="radio" id="tile-btn332" class="box332">
+            <label for="tile-btn332" class="tile332"></label>
+            <input type="radio" id="tile-btn334" class="box334">
+            <label for="tile-btn334" class="tile334"></label>
+            <input type="radio" id="tile-btn342" class="box342">
+            <label for="tile-btn342" class="tile342"></label>
+            <input type="radio" id="tile-btn346" class="box346">
+            <label for="tile-btn346" class="tile346"></label>
+            <input type="radio" id="tile-btn349" class="box349">
+            <label for="tile-btn349" class="tile349"></label>
+            <input type="radio" id="tile-btn360" class="box360">
+            <label for="tile-btn360" class="tile360"></label>
+            <input type="radio" id="tile-btn361" class="box361">
+            <label for="tile-btn361" class="tile361"></label>
+            <input type="radio" id="tile-btn363" class="box363">
+            <label for="tile-btn363" class="tile363"></label>
+            <input type="radio" id="tile-btn367" class="box367">
+            <label for="tile-btn367" class="tile367"></label>
+            <input type="radio" id="tile-btn375" class="box375">
+            <label for="tile-btn375" class="tile375"></label>
+            <input type="radio" id="tile-btn377" class="box377">
+            <label for="tile-btn377" class="tile377"></label>
+            <input type="radio" id="tile-btn378" class="box378">
+            <label for="tile-btn378" class="tile378"></label>
+            <input type="radio" id="tile-btn381" class="box381">
+            <label for="tile-btn381" class="tile381"></label>
+            <input type="radio" id="tile-btn391" class="box391">
+            <label for="tile-btn391" class="tile391"></label>
+            <input type="radio" id="tile-btn392" class="box392">
+            <label for="tile-btn392" class="tile392"></label>
+            <input type="radio" id="tile-btn394" class="box394">
+            <label for="tile-btn394" class="tile394"></label>
+            <input type="radio" id="tile-btn395" class="box395">
+            <label for="tile-btn395" class="tile395"></label>
+            <input type="radio" id="tile-btn398" class="box398">
+            <label for="tile-btn398" class="tile398"></label>
+            <input type="radio" id="tile-btn408" class="box408">
+            <label for="tile-btn408" class="tile408"></label>
+            <input type="radio" id="tile-btn409" class="box409">
+            <label for="tile-btn409" class="tile409"></label>
+            <input type="radio" id="tile-btn411" class="box411">
+            <label for="tile-btn411" class="tile411"></label>
+            <input type="radio" id="tile-btn415" class="box415">
+            <label for="tile-btn415" class="tile415"></label>
+            <input type="radio" id="tile-btn420" class="box420">
+            <label for="tile-btn420" class="tile420"></label>
+        </div>
+        <div class="grid-line">
+            <input type="radio" id="tile-btn1" class="box1">
+            <label for="tile-btn1" class="tile1"></label>
+            <input type="radio" id="tile-btn7" class="box7">
+            <label for="tile-btn7" class="tile7"></label>
+            <input type="radio" id="tile-btn13" class="box13">
+            <label for="tile-btn13" class="tile13"></label>
+            <input type="radio" id="tile-btn16" class="box16">
+            <label for="tile-btn16" class="tile16"></label>
+            <input type="radio" id="tile-btn17" class="box17">
+            <label for="tile-btn17" class="tile17"></label>
+            <input type="radio" id="tile-btn20" class="box20">
+            <label for="tile-btn20" class="tile20"></label>
+            <input type="radio" id="tile-btn31" class="box31">
+            <label for="tile-btn31" class="tile31"></label>
+            <input type="radio" id="tile-btn32" class="box32">
+            <label for="tile-btn32" class="tile32"></label>
+            <input type="radio" id="tile-btn34" class="box34">
+            <label for="tile-btn34" class="tile34"></label>
+            <input type="radio" id="tile-btn36" class="box36">
+            <label for="tile-btn36" class="tile36"></label>
+            <input type="radio" id="tile-btn38" class="box38">
+            <label for="tile-btn38" class="tile38"></label>
+            <input type="radio" id="tile-btn43" class="box43">
+            <label for="tile-btn43" class="tile43"></label>
+            <input type="radio" id="tile-btn48" class="box48">
+            <label for="tile-btn48" class="tile48"></label>
+            <input type="radio" id="tile-btn50" class="box50">
+            <label for="tile-btn50" class="tile50"></label>
+            <input type="radio" id="tile-btn52" class="box52">
+            <label for="tile-btn52" class="tile52"></label>
+            <input type="radio" id="tile-btn55" class="box55">
+            <label for="tile-btn55" class="tile55"></label>
+            <input type="radio" id="tile-btn57" class="box57">
+            <label for="tile-btn57" class="tile57"></label>
+            <input type="radio" id="tile-btn61" class="box61">
+            <label for="tile-btn61" class="tile61"></label>
+            <input type="radio" id="tile-btn66" class="box66">
+            <label for="tile-btn66" class="tile66"></label>
+            <input type="radio" id="tile-btn70" class="box70">
+            <label for="tile-btn70" class="tile70"></label>
+            <input type="radio" id="tile-btn78" class="box78">
+            <label for="tile-btn78" class="tile78"></label>
+            <input type="radio" id="tile-btn83" class="box83">
+            <label for="tile-btn83" class="tile83"></label>
+            <input type="radio" id="tile-btn85" class="box85">
+            <label for="tile-btn85" class="tile85"></label>
+            <input type="radio" id="tile-btn92" class="box92">
+            <label for="tile-btn92" class="tile92"></label>
+            <input type="radio" id="tile-btn93" class="box93">
+            <label for="tile-btn93" class="tile93"></label>
+            <input type="radio" id="tile-btn97" class="box97">
+            <label for="tile-btn97" class="tile97"></label>
+            <input type="radio" id="tile-btn100" class="box100">
+            <label for="tile-btn100" class="tile100"></label>
+            <input type="radio" id="tile-btn113" class="box113">
+            <label for="tile-btn113" class="tile113"></label>
+            <input type="radio" id="tile-btn114" class="box114">
+            <label for="tile-btn114" class="tile114"></label>
+            <input type="radio" id="tile-btn116" class="box116">
+            <label for="tile-btn116" class="tile116"></label>
+            <input type="radio" id="tile-btn117" class="box117">
+            <label for="tile-btn117" class="tile117"></label>
+            <input type="radio" id="tile-btn128" class="box128">
+            <label for="tile-btn128" class="tile128"></label>
+            <input type="radio" id="tile-btn129" class="box129">
+            <label for="tile-btn129" class="tile129"></label>
+            <input type="radio" id="tile-btn131" class="box131">
+            <label for="tile-btn131" class="tile131"></label>
+            <input type="radio" id="tile-btn135" class="box135">
+            <label for="tile-btn135" class="tile135"></label>
+            <input type="radio" id="tile-btn137" class="box137">
+            <label for="tile-btn137" class="tile137"></label>
+            <input type="radio" id="tile-btn140" class="box140">
+            <label for="tile-btn140" class="tile140"></label>
+            <input type="radio" id="tile-btn146" class="box146">
+            <label for="tile-btn146" class="tile146"></label>
+            <input type="radio" id="tile-btn149" class="box149">
+            <label for="tile-btn149" class="tile149"></label>
+            <input type="radio" id="tile-btn150" class="box150">
+            <label for="tile-btn150" class="tile150"></label>
+            <input type="radio" id="tile-btn161" class="box161">
+            <label for="tile-btn161" class="tile161"></label>
+            <input type="radio" id="tile-btn162" class="box162">
+            <label for="tile-btn162" class="tile162"></label>
+            <input type="radio" id="tile-btn175" class="box175">
+            <label for="tile-btn175" class="tile175"></label>
+            <input type="radio" id="tile-btn176" class="box176">
+            <label for="tile-btn176" class="tile176"></label>
+            <input type="radio" id="tile-btn179" class="box179">
+            <label for="tile-btn179" class="tile179"></label>
+            <input type="radio" id="tile-btn180" class="box180">
+            <label for="tile-btn180" class="tile180"></label>
+            <input type="radio" id="tile-btn193" class="box193">
+            <label for="tile-btn193" class="tile193"></label>
+            <input type="radio" id="tile-btn196" class="box196">
+            <label for="tile-btn196" class="tile196"></label>
+            <input type="radio" id="tile-btn197" class="box197">
+            <label for="tile-btn197" class="tile197"></label>
+            <input type="radio" id="tile-btn202" class="box202">
+            <label for="tile-btn202" class="tile202"></label>
+            <input type="radio" id="tile-btn213" class="box213">
+            <label for="tile-btn213" class="tile213"></label>
+            <input type="radio" id="tile-btn215" class="box215">
+            <label for="tile-btn215" class="tile215"></label>
+            <input type="radio" id="tile-btn221" class="box221">
+            <label for="tile-btn221" class="tile221"></label>
+            <input type="radio" id="tile-btn222" class="box222">
+            <label for="tile-btn222" class="tile222"></label>
+            <input type="radio" id="tile-btn225" class="box225">
+            <label for="tile-btn225" class="tile225"></label>
+            <input type="radio" id="tile-btn241" class="box241">
+            <label for="tile-btn241" class="tile241"></label>
+            <input type="radio" id="tile-btn248" class="box248">
+            <label for="tile-btn248" class="tile248"></label>
+            <input type="radio" id="tile-btn249" class="box249">
+            <label for="tile-btn249" class="tile249"></label>
+            <input type="radio" id="tile-btn251" class="box251">
+            <label for="tile-btn251" class="tile251"></label>
+            <input type="radio" id="tile-btn257" class="box257">
+            <label for="tile-btn257" class="tile257"></label>
+            <input type="radio" id="tile-btn264" class="box264">
+            <label for="tile-btn264" class="tile264"></label>
+            <input type="radio" id="tile-btn267" class="box267">
+            <label for="tile-btn267" class="tile267"></label>
+            <input type="radio" id="tile-btn268" class="box268">
+            <label for="tile-btn268" class="tile268"></label>
+            <input type="radio" id="tile-btn273" class="box273">
+            <label for="tile-btn273" class="tile273"></label>
+            <input type="radio" id="tile-btn285" class="box285">
+            <label for="tile-btn285" class="tile285"></label>
+            <input type="radio" id="tile-btn286" class="box286">
+            <label for="tile-btn286" class="tile286"></label>
+            <input type="radio" id="tile-btn293" class="box293">
+            <label for="tile-btn293" class="tile293"></label>
+            <input type="radio" id="tile-btn297" class="box297">
+            <label for="tile-btn297" class="tile297"></label>
+            <input type="radio" id="tile-btn306" class="box306">
+            <label for="tile-btn306" class="tile306"></label>
+            <input type="radio" id="tile-btn309" class="box309">
+            <label for="tile-btn309" class="tile309"></label>
+            <input type="radio" id="tile-btn310" class="box310">
+            <label for="tile-btn310" class="tile310"></label>
+            <input type="radio" id="tile-btn321" class="box321">
+            <label for="tile-btn321" class="tile321"></label>
+            <input type="radio" id="tile-btn323" class="box323">
+            <label for="tile-btn323" class="tile323"></label>
+            <input type="radio" id="tile-btn325" class="box325">
+            <label for="tile-btn325" class="tile325"></label>
+            <input type="radio" id="tile-btn327" class="box327">
+            <label for="tile-btn327" class="tile327"></label>
+            <input type="radio" id="tile-btn329" class="box329">
+            <label for="tile-btn329" class="tile329"></label>
+            <input type="radio" id="tile-btn337" class="box337">
+            <label for="tile-btn337" class="tile337"></label>
+            <input type="radio" id="tile-btn339" class="box339">
+            <label for="tile-btn339" class="tile339"></label>
+            <input type="radio" id="tile-btn340" class="box340">
+            <label for="tile-btn340" class="tile340"></label>
+            <input type="radio" id="tile-btn345" class="box345">
+            <label for="tile-btn345" class="tile345"></label>
+            <input type="radio" id="tile-btn353" class="box353">
+            <label for="tile-btn353" class="tile353"></label>
+            <input type="radio" id="tile-btn354" class="box354">
+            <label for="tile-btn354" class="tile354"></label>
+            <input type="radio" id="tile-btn362" class="box362">
+            <label for="tile-btn362" class="tile362"></label>
+            <input type="radio" id="tile-btn365" class="box365">
+            <label for="tile-btn365" class="tile365"></label>
+            <input type="radio" id="tile-btn371" class="box371">
+            <label for="tile-btn371" class="tile371"></label>
+            <input type="radio" id="tile-btn376" class="box376">
+            <label for="tile-btn376" class="tile376"></label>
+            <input type="radio" id="tile-btn379" class="box379">
+            <label for="tile-btn379" class="tile379"></label>
+            <input type="radio" id="tile-btn386" class="box386">
+            <label for="tile-btn386" class="tile386"></label>
+            <input type="radio" id="tile-btn388" class="box388">
+            <label for="tile-btn388" class="tile388"></label>
+            <input type="radio" id="tile-btn396" class="box396">
+            <label for="tile-btn396" class="tile396"></label>
+            <input type="radio" id="tile-btn397" class="box397">
+            <label for="tile-btn397" class="tile397"></label>
+            <input type="radio" id="tile-btn403" class="box403">
+            <label for="tile-btn403" class="tile403"></label>
+            <input type="radio" id="tile-btn412" class="box412">
+            <label for="tile-btn412" class="tile412"></label>
+            <input type="radio" id="tile-btn413" class="box413">
+            <label for="tile-btn413" class="tile413"></label>
+            <input type="radio" id="tile-btn422" class="box422">
+            <label for="tile-btn422" class="tile422"></label>
+        </div>
+        <div class="grid-line">
+            <input type="radio" id="tile-btn2" class="box2">
+            <label for="tile-btn2" class="tile2"></label>
+            <input type="radio" id="tile-btn4" class="box4">
+            <label for="tile-btn4" class="tile4"></label>
+            <input type="radio" id="tile-btn5" class="box5">
+            <label for="tile-btn5" class="tile5"></label>
+            <input type="radio" id="tile-btn8" class="box8">
+            <label for="tile-btn8" class="tile8"></label>
+            <input type="radio" id="tile-btn12" class="box12">
+            <label for="tile-btn12" class="tile12"></label>
+            <input type="radio" id="tile-btn19" class="box19">
+            <label for="tile-btn19" class="tile19"></label>
+            <input type="radio" id="tile-btn21" class="box21">
+            <label for="tile-btn21" class="tile21"></label>
+            <input type="radio" id="tile-btn22" class="box22">
+            <label for="tile-btn22" class="tile22"></label>
+            <input type="radio" id="tile-btn24" class="box24">
+            <label for="tile-btn24" class="tile24"></label>
+            <input type="radio" id="tile-btn27" class="box27">
+            <label for="tile-btn27" class="tile27"></label>
+            <input type="radio" id="tile-btn29" class="box29">
+            <label for="tile-btn29" class="tile29"></label>
+            <input type="radio" id="tile-btn33" class="box33">
+            <label for="tile-btn33" class="tile33"></label>
+            <input type="radio" id="tile-btn44" class="box44">
+            <label for="tile-btn44" class="tile44"></label>
+            <input type="radio" id="tile-btn45" class="box45">
+            <label for="tile-btn45" class="tile45"></label>
+            <input type="radio" id="tile-btn54" class="box54">
+            <label for="tile-btn54" class="tile54"></label>
+            <input type="radio" id="tile-btn56" class="box56">
+            <label for="tile-btn56" class="tile56"></label>
+            <input type="radio" id="tile-btn59" class="box59">
+            <label for="tile-btn59" class="tile59"></label>
+            <input type="radio" id="tile-btn64" class="box64">
+            <label for="tile-btn64" class="tile64"></label>
+            <input type="radio" id="tile-btn65" class="box65">
+            <label for="tile-btn65" class="tile65"></label>
+            <input type="radio" id="tile-btn71" class="box71">
+            <label for="tile-btn71" class="tile71"></label>
+            <input type="radio" id="tile-btn73" class="box73">
+            <label for="tile-btn73" class="tile73"></label>
+            <input type="radio" id="tile-btn74" class="box74">
+            <label for="tile-btn74" class="tile74"></label>
+            <input type="radio" id="tile-btn82" class="box82">
+            <label for="tile-btn82" class="tile82"></label>
+            <input type="radio" id="tile-btn86" class="box86">
+            <label for="tile-btn86" class="tile86"></label>
+            <input type="radio" id="tile-btn89" class="box89">
+            <label for="tile-btn89" class="tile89"></label>
+            <input type="radio" id="tile-btn94" class="box94">
+            <label for="tile-btn94" class="tile94"></label>
+            <input type="radio" id="tile-btn95" class="box95">
+            <label for="tile-btn95" class="tile95"></label>
+            <input type="radio" id="tile-btn98" class="box98">
+            <label for="tile-btn98" class="tile98"></label>
+            <input type="radio" id="tile-btn99" class="box99">
+            <label for="tile-btn99" class="tile99"></label>
+            <input type="radio" id="tile-btn103" class="box103">
+            <label for="tile-btn103" class="tile103"></label>
+            <input type="radio" id="tile-btn105" class="box105">
+            <label for="tile-btn105" class="tile105"></label>
+            <input type="radio" id="tile-btn106" class="box106">
+            <label for="tile-btn106" class="tile106"></label>
+            <input type="radio" id="tile-btn111" class="box111">
+            <label for="tile-btn111" class="tile111"></label>
+            <input type="radio" id="tile-btn118" class="box118">
+            <label for="tile-btn118" class="tile118"></label>
+            <input type="radio" id="tile-btn119" class="box119">
+            <label for="tile-btn119" class="tile119"></label>
+            <input type="radio" id="tile-btn122" class="box122">
+            <label for="tile-btn122" class="tile122"></label>
+            <input type="radio" id="tile-btn123" class="box123">
+            <label for="tile-btn123" class="tile123"></label>
+            <input type="radio" id="tile-btn125" class="box125">
+            <label for="tile-btn125" class="tile125"></label>
+            <input type="radio" id="tile-btn130" class="box130">
+            <label for="tile-btn130" class="tile130"></label>
+            <input type="radio" id="tile-btn132" class="box132">
+            <label for="tile-btn132" class="tile132"></label>
+            <input type="radio" id="tile-btn133" class="box133">
+            <label for="tile-btn133" class="tile133"></label>
+            <input type="radio" id="tile-btn139" class="box139">
+            <label for="tile-btn139" class="tile139"></label>
+            <input type="radio" id="tile-btn142" class="box142">
+            <label for="tile-btn142" class="tile142"></label>
+            <input type="radio" id="tile-btn143" class="box143">
+            <label for="tile-btn143" class="tile143"></label>
+            <input type="radio" id="tile-btn154" class="box154">
+            <label for="tile-btn154" class="tile154"></label>
+            <input type="radio" id="tile-btn155" class="box155">
+            <label for="tile-btn155" class="tile155"></label>
+            <input type="radio" id="tile-btn157" class="box157">
+            <label for="tile-btn157" class="tile157"></label>
+            <input type="radio" id="tile-btn159" class="box159">
+            <label for="tile-btn159" class="tile159"></label>
+            <input type="radio" id="tile-btn160" class="box160">
+            <label for="tile-btn160" class="tile160"></label>
+            <input type="radio" id="tile-btn167" class="box167">
+            <label for="tile-btn167" class="tile167"></label>
+            <input type="radio" id="tile-btn168" class="box168">
+            <label for="tile-btn168" class="tile168"></label>
+            <input type="radio" id="tile-btn170" class="box170">
+            <label for="tile-btn170" class="tile170"></label>
+            <input type="radio" id="tile-btn178" class="box178">
+            <label for="tile-btn178" class="tile178"></label>
+            <input type="radio" id="tile-btn181" class="box181">
+            <label for="tile-btn181" class="tile181"></label>
+            <input type="radio" id="tile-btn183" class="box183">
+            <label for="tile-btn183" class="tile183"></label>
+            <input type="radio" id="tile-btn184" class="box184">
+            <label for="tile-btn184" class="tile184"></label>
+            <input type="radio" id="tile-btn186" class="box186">
+            <label for="tile-btn186" class="tile186"></label>
+            <input type="radio" id="tile-btn190" class="box190">
+            <label for="tile-btn190" class="tile190"></label>
+            <input type="radio" id="tile-btn194" class="box194">
+            <label for="tile-btn194" class="tile194"></label>
+            <input type="radio" id="tile-btn195" class="box195">
+            <label for="tile-btn195" class="tile195"></label>
+            <input type="radio" id="tile-btn198" class="box198">
+            <label for="tile-btn198" class="tile198"></label>
+            <input type="radio" id="tile-btn200" class="box200">
+            <label for="tile-btn200" class="tile200"></label>
+            <input type="radio" id="tile-btn201" class="box201">
+            <label for="tile-btn201" class="tile201"></label>
+            <input type="radio" id="tile-btn205" class="box205">
+            <label for="tile-btn205" class="tile205"></label>
+            <input type="radio" id="tile-btn212" class="box212">
+            <label for="tile-btn212" class="tile212"></label>
+            <input type="radio" id="tile-btn217" class="box217">
+            <label for="tile-btn217" class="tile217"></label>
+            <input type="radio" id="tile-btn219" class="box219">
+            <label for="tile-btn219" class="tile219"></label>
+            <input type="radio" id="tile-btn227" class="box227">
+            <label for="tile-btn227" class="tile227"></label>
+            <input type="radio" id="tile-btn231" class="box231">
+            <label for="tile-btn231" class="tile231"></label>
+            <input type="radio" id="tile-btn232" class="box232">
+            <label for="tile-btn232" class="tile232"></label>
+            <input type="radio" id="tile-btn234" class="box234">
+            <label for="tile-btn234" class="tile234"></label>
+            <input type="radio" id="tile-btn237" class="box237">
+            <label for="tile-btn237" class="tile237"></label>
+            <input type="radio" id="tile-btn238" class="box238">
+            <label for="tile-btn238" class="tile238"></label>
+            <input type="radio" id="tile-btn243" class="box243">
+            <label for="tile-btn243" class="tile243"></label>
+            <input type="radio" id="tile-btn244" class="box244">
+            <label for="tile-btn244" class="tile244"></label>
+            <input type="radio" id="tile-btn246" class="box246">
+            <label for="tile-btn246" class="tile246"></label>
+            <input type="radio" id="tile-btn250" class="box250">
+            <label for="tile-btn250" class="tile250"></label>
+            <input type="radio" id="tile-btn252" class="box252">
+            <label for="tile-btn252" class="tile252"></label>
+            <input type="radio" id="tile-btn253" class="box253">
+            <label for="tile-btn253" class="tile253"></label>
+            <input type="radio" id="tile-btn256" class="box256">
+            <label for="tile-btn256" class="tile256"></label>
+            <input type="radio" id="tile-btn262" class="box262">
+            <label for="tile-btn262" class="tile262"></label>
+            <input type="radio" id="tile-btn263" class="box263">
+            <label for="tile-btn263" class="tile263"></label>
+            <input type="radio" id="tile-btn266" class="box266">
+            <label for="tile-btn266" class="tile266"></label>
+            <input type="radio" id="tile-btn270" class="box270">
+            <label for="tile-btn270" class="tile270"></label>
+            <input type="radio" id="tile-btn275" class="box275">
+            <label for="tile-btn275" class="tile275"></label>
+            <input type="radio" id="tile-btn277" class="box277">
+            <label for="tile-btn277" class="tile277"></label>
+            <input type="radio" id="tile-btn279" class="box279">
+            <label for="tile-btn279" class="tile279"></label>
+            <input type="radio" id="tile-btn281" class="box281">
+            <label for="tile-btn281" class="tile281"></label>
+            <input type="radio" id="tile-btn282" class="box282">
+            <label for="tile-btn282" class="tile282"></label>
+            <input type="radio" id="tile-btn284" class="box284">
+            <label for="tile-btn284" class="tile284"></label>
+            <input type="radio" id="tile-btn287" class="box287">
+            <label for="tile-btn287" class="tile287"></label>
+            <input type="radio" id="tile-btn296" class="box296">
+            <label for="tile-btn296" class="tile296"></label>
+            <input type="radio" id="tile-btn298" class="box298">
+            <label for="tile-btn298" class="tile298"></label>
+            <input type="radio" id="tile-btn299" class="box299">
+            <label for="tile-btn299" class="tile299"></label>
+            <input type="radio" id="tile-btn302" class="box302">
+            <label for="tile-btn302" class="tile302"></label>
+            <input type="radio" id="tile-btn303" class="box303">
+            <label for="tile-btn303" class="tile303"></label>
+            <input type="radio" id="tile-btn305" class="box305">
+            <label for="tile-btn305" class="tile305"></label>
+            <input type="radio" id="tile-btn313" class="box313">
+            <label for="tile-btn313" class="tile313"></label>
+            <input type="radio" id="tile-btn317" class="box317">
+            <label for="tile-btn317" class="tile317"></label>
+            <input type="radio" id="tile-btn320" class="box320">
+            <label for="tile-btn320" class="tile320"></label>
+            <input type="radio" id="tile-btn322" class="box322">
+            <label for="tile-btn322" class="tile322"></label>
+            <input type="radio" id="tile-btn328" class="box328">
+            <label for="tile-btn328" class="tile328"></label>
+            <input type="radio" id="tile-btn336" class="box336">
+            <label for="tile-btn336" class="tile336"></label>
+            <input type="radio" id="tile-btn341" class="box341">
+            <label for="tile-btn341" class="tile341"></label>
+            <input type="radio" id="tile-btn343" class="box343">
+            <label for="tile-btn343" class="tile343"></label>
+            <input type="radio" id="tile-btn344" class="box344">
+            <label for="tile-btn344" class="tile344"></label>
+            <input type="radio" id="tile-btn351" class="box351">
+            <label for="tile-btn351" class="tile351"></label>
+            <input type="radio" id="tile-btn355" class="box355">
+            <label for="tile-btn355" class="tile355"></label>
+            <input type="radio" id="tile-btn357" class="box357">
+            <label for="tile-btn357" class="tile357"></label>
+            <input type="radio" id="tile-btn358" class="box358">
+            <label for="tile-btn358" class="tile358"></label>
+            <input type="radio" id="tile-btn366" class="box366">
+            <label for="tile-btn366" class="tile366"></label>
+            <input type="radio" id="tile-btn368" class="box368">
+            <label for="tile-btn368" class="tile368"></label>
+            <input type="radio" id="tile-btn372" class="box372">
+            <label for="tile-btn372" class="tile372"></label>
+            <input type="radio" id="tile-btn373" class="box373">
+            <label for="tile-btn373" class="tile373"></label>
+            <input type="radio" id="tile-btn383" class="box383">
+            <label for="tile-btn383" class="tile383"></label>
+            <input type="radio" id="tile-btn387" class="box387">
+            <label for="tile-btn387" class="tile387"></label>
+            <input type="radio" id="tile-btn389" class="box389">
+            <label for="tile-btn389" class="tile389"></label>
+            <input type="radio" id="tile-btn390" class="box390">
+            <label for="tile-btn390" class="tile390"></label>
+            <input type="radio" id="tile-btn401" class="box401">
+            <label for="tile-btn401" class="tile401"></label>
+            <input type="radio" id="tile-btn404" class="box404">
+            <label for="tile-btn404" class="tile404"></label>
+            <input type="radio" id="tile-btn405" class="box405">
+            <label for="tile-btn405" class="tile405"></label>
+            <input type="radio" id="tile-btn407" class="box407">
+            <label for="tile-btn407" class="tile407"></label>
+            <input type="radio" id="tile-btn414" class="box414">
+            <label for="tile-btn414" class="tile414"></label>
+            <input type="radio" id="tile-btn418" class="box418">
+            <label for="tile-btn418" class="tile418"></label>
+            <input type="radio" id="tile-btn421" class="box421">
+            <label for="tile-btn421" class="tile421"></label>
+            <input type="radio" id="tile-btn423" class="box423">
+            <label for="tile-btn423" class="tile423"></label>
+        </div>
+        <div class="grid-line">
+            <input type="radio" id="tile-btn" class="box">
+            <label for="tile-btn" class="tile"></label>
+            <input type="radio" id="tile-btn9" class="box9">
+            <label for="tile-btn9" class="tile9"></label>
+            <input type="radio" id="tile-btn10" class="box10">
+            <label for="tile-btn10" class="tile10"></label>
+            <input type="radio" id="tile-btn14" class="box14">
+            <label for="tile-btn14" class="tile14"></label>
+            <input type="radio" id="tile-btn25" class="box25">
+            <label for="tile-btn25" class="tile25"></label>
+            <input type="radio" id="tile-btn26" class="box26">
+            <label for="tile-btn26" class="tile26"></label>
+            <input type="radio" id="tile-btn35" class="box35">
+            <label for="tile-btn35" class="tile35"></label>
+            <input type="radio" id="tile-btn39" class="box39">
+            <label for="tile-btn39" class="tile39"></label>
+            <input type="radio" id="tile-btn41" class="box41">
+            <label for="tile-btn41" class="tile41"></label>
+            <input type="radio" id="tile-btn46" class="box46">
+            <label for="tile-btn46" class="tile46"></label>
+            <input type="radio" id="tile-btn51" class="box51">
+            <label for="tile-btn51" class="tile51"></label>
+            <input type="radio" id="tile-btn58" class="box58">
+            <label for="tile-btn58" class="tile58"></label>
+            <input type="radio" id="tile-btn62" class="box62">
+            <label for="tile-btn62" class="tile62"></label>
+            <input type="radio" id="tile-btn63" class="box63">
+            <label for="tile-btn63" class="tile63"></label>
+            <input type="radio" id="tile-btn69" class="box69">
+            <label for="tile-btn69" class="tile69"></label>
+            <input type="radio" id="tile-btn75" class="box75">
+            <label for="tile-btn75" class="tile75"></label>
+            <input type="radio" id="tile-btn77" class="box77">
+            <label for="tile-btn77" class="tile77"></label>
+            <input type="radio" id="tile-btn81" class="box81">
+            <label for="tile-btn81" class="tile81"></label>
+            <input type="radio" id="tile-btn84" class="box84">
+            <label for="tile-btn84" class="tile84"></label>
+            <input type="radio" id="tile-btn87" class="box87">
+            <label for="tile-btn87" class="tile87"></label>
+            <input type="radio" id="tile-btn88" class="box88">
+            <label for="tile-btn88" class="tile88"></label>
+            <input type="radio" id="tile-btn104" class="box104">
+            <label for="tile-btn104" class="tile104"></label>
+            <input type="radio" id="tile-btn107" class="box107">
+            <label for="tile-btn107" class="tile107"></label>
+            <input type="radio" id="tile-btn109" class="box109">
+            <label for="tile-btn109" class="tile109"></label>
+            <input type="radio" id="tile-btn115" class="box115">
+            <label for="tile-btn115" class="tile115"></label>
+            <input type="radio" id="tile-btn120" class="box120">
+            <label for="tile-btn120" class="tile120"></label>
+            <input type="radio" id="tile-btn121" class="box121">
+            <label for="tile-btn121" class="tile121"></label>
+            <input type="radio" id="tile-btn124" class="box124">
+            <label for="tile-btn124" class="tile124"></label>
+            <input type="radio" id="tile-btn127" class="box127">
+            <label for="tile-btn127" class="tile127"></label>
+            <input type="radio" id="tile-btn136" class="box136">
+            <label for="tile-btn136" class="tile136"></label>
+            <input type="radio" id="tile-btn144" class="box144">
+            <label for="tile-btn144" class="tile144"></label>
+            <input type="radio" id="tile-btn147" class="box147">
+            <label for="tile-btn147" class="tile147"></label>
+            <input type="radio" id="tile-btn148" class="box148">
+            <label for="tile-btn148" class="tile148"></label>
+            <input type="radio" id="tile-btn151" class="box151">
+            <label for="tile-btn151" class="tile151"></label>
+            <input type="radio" id="tile-btn156" class="box156">
+            <label for="tile-btn156" class="tile156"></label>
+            <input type="radio" id="tile-btn163" class="box163">
+            <label for="tile-btn163" class="tile163"></label>
+            <input type="radio" id="tile-btn164" class="box164">
+            <label for="tile-btn164" class="tile164"></label>
+            <input type="radio" id="tile-btn171" class="box171">
+            <label for="tile-btn171" class="tile171"></label>
+            <input type="radio" id="tile-btn172" class="box172">
+            <label for="tile-btn172" class="tile172"></label>
+            <input type="radio" id="tile-btn177" class="box177">
+            <label for="tile-btn177" class="tile177"></label>
+            <input type="radio" id="tile-btn182" class="box182">
+            <label for="tile-btn182" class="tile182"></label>
+            <input type="radio" id="tile-btn187" class="box187">
+            <label for="tile-btn187" class="tile187"></label>
+            <input type="radio" id="tile-btn188" class="box188">
+            <label for="tile-btn188" class="tile188"></label>
+            <input type="radio" id="tile-btn199" class="box199">
+            <label for="tile-btn199" class="tile199"></label>
+            <input type="radio" id="tile-btn204" class="box204">
+            <label for="tile-btn204" class="tile204"></label>
+            <input type="radio" id="tile-btn207" class="box207">
+            <label for="tile-btn207" class="tile207"></label>
+            <input type="radio" id="tile-btn210" class="box210">
+            <label for="tile-btn210" class="tile210"></label>
+            <input type="radio" id="tile-btn214" class="box214">
+            <label for="tile-btn214" class="tile214"></label>
+            <input type="radio" id="tile-btn216" class="box216">
+            <label for="tile-btn216" class="tile216"></label>
+            <input type="radio" id="tile-btn218" class="box218">
+            <label for="tile-btn218" class="tile218"></label>
+            <input type="radio" id="tile-btn220" class="box220">
+            <label for="tile-btn220" class="tile220"></label>
+            <input type="radio" id="tile-btn228" class="box228">
+            <label for="tile-btn228" class="tile228"></label>
+            <input type="radio" id="tile-btn229" class="box229">
+            <label for="tile-btn229" class="tile229"></label>
+            <input type="radio" id="tile-btn233" class="box233">
+            <label for="tile-btn233" class="tile233"></label>
+            <input type="radio" id="tile-btn235" class="box235">
+            <label for="tile-btn235" class="tile235"></label>
+            <input type="radio" id="tile-btn236" class="box236">
+            <label for="tile-btn236" class="tile236"></label>
+            <input type="radio" id="tile-btn254" class="box254">
+            <label for="tile-btn254" class="tile254"></label>
+            <input type="radio" id="tile-btn255" class="box255">
+            <label for="tile-btn255" class="tile255"></label>
+            <input type="radio" id="tile-btn260" class="box260">
+            <label for="tile-btn260" class="tile260"></label>
+            <input type="radio" id="tile-btn261" class="box261">
+            <label for="tile-btn261" class="tile261"></label>
+            <input type="radio" id="tile-btn265" class="box265">
+            <label for="tile-btn265" class="tile265"></label>
+            <input type="radio" id="tile-btn276" class="box276">
+            <label for="tile-btn276" class="tile276"></label>
+            <input type="radio" id="tile-btn278" class="box278">
+            <label for="tile-btn278" class="tile278"></label>
+            <input type="radio" id="tile-btn280" class="box280">
+            <label for="tile-btn280" class="tile280"></label>
+            <input type="radio" id="tile-btn283" class="box283">
+            <label for="tile-btn283" class="tile283"></label>
+            <input type="radio" id="tile-btn289" class="box289">
+            <label for="tile-btn289" class="tile289"></label>
+            <input type="radio" id="tile-btn290" class="box290">
+            <label for="tile-btn290" class="tile290"></label>
+            <input type="radio" id="tile-btn295" class="box295">
+            <label for="tile-btn295" class="tile295"></label>
+            <input type="radio" id="tile-btn300" class="box300">
+            <label for="tile-btn300" class="tile300"></label>
+            <input type="radio" id="tile-btn301" class="box301">
+            <label for="tile-btn301" class="tile301"></label>
+            <input type="radio" id="tile-btn312" class="box312">
+            <label for="tile-btn312" class="tile312"></label>
+            <input type="radio" id="tile-btn315" class="box315">
+            <label for="tile-btn315" class="tile315"></label>
+            <input type="radio" id="tile-btn316" class="box316">
+            <label for="tile-btn316" class="tile316"></label>
+            <input type="radio" id="tile-btn319" class="box319">
+            <label for="tile-btn319" class="tile319"></label>
+            <input type="radio" id="tile-btn324" class="box324">
+            <label for="tile-btn324" class="tile324"></label>
+            <input type="radio" id="tile-btn331" class="box331">
+            <label for="tile-btn331" class="tile331"></label>
+            <input type="radio" id="tile-btn333" class="box333">
+            <label for="tile-btn333" class="tile333"></label>
+            <input type="radio" id="tile-btn335" class="box335">
+            <label for="tile-btn335" class="tile335"></label>
+            <input type="radio" id="tile-btn338" class="box338">
+            <label for="tile-btn338" class="tile338"></label>
+            <input type="radio" id="tile-btn347" class="box347">
+            <label for="tile-btn347" class="tile347"></label>
+            <input type="radio" id="tile-btn348" class="box348">
+            <label for="tile-btn348" class="tile348"></label>
+            <input type="radio" id="tile-btn350" class="box350">
+            <label for="tile-btn350" class="tile350"></label>
+            <input type="radio" id="tile-btn352" class="box352">
+            <label for="tile-btn352" class="tile352"></label>
+            <input type="radio" id="tile-btn356" class="box356">
+            <label for="tile-btn356" class="tile356"></label>
+            <input type="radio" id="tile-btn359" class="box359">
+            <label for="tile-btn359" class="tile359"></label>
+            <input type="radio" id="tile-btn364" class="box364">
+            <label for="tile-btn364" class="tile364"></label>
+            <input type="radio" id="tile-btn369" class="box369">
+            <label for="tile-btn369" class="tile369"></label>
+            <input type="radio" id="tile-btn370" class="box370">
+            <label for="tile-btn370" class="tile370"></label>
+            <input type="radio" id="tile-btn374" class="box374">
+            <label for="tile-btn374" class="tile374"></label>
+            <input type="radio" id="tile-btn380" class="box380">
+            <label for="tile-btn380" class="tile380"></label>
+            <input type="radio" id="tile-btn382" class="box382">
+            <label for="tile-btn382" class="tile382"></label>
+            <input type="radio" id="tile-btn384" class="box384">
+            <label for="tile-btn384" class="tile384"></label>
+            <input type="radio" id="tile-btn385" class="box385">
+            <label for="tile-btn385" class="tile385"></label>
+            <input type="radio" id="tile-btn393" class="box393">
+            <label for="tile-btn393" class="tile393"></label>
+            <input type="radio" id="tile-btn399" class="box399">
+            <label for="tile-btn399" class="tile399"></label>
+            <input type="radio" id="tile-btn400" class="box400">
+            <label for="tile-btn400" class="tile400"></label>
+            <input type="radio" id="tile-btn402" class="box402">
+            <label for="tile-btn402" class="tile402"></label>
+            <input type="radio" id="tile-btn406" class="box406">
+            <label for="tile-btn406" class="tile406"></label>
+            <input type="radio" id="tile-btn410" class="box410">
+            <label for="tile-btn410" class="tile410"></label>
+            <input type="radio" id="tile-btn416" class="box416">
+            <label for="tile-btn416" class="tile416"></label>
+            <input type="radio" id="tile-btn417" class="box417">
+            <label for="tile-btn417" class="tile417"></label>
+            <input type="radio" id="tile-btn419" class="box419">
+            <label for="tile-btn419" class="tile419"></label>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
