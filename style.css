@@ -10481,4 +10481,48 @@ label[class^="tile"]::after{
         animation-play-state: running;
     }
 }
+.howto-toggle{
+    display: none;
+}
+.screen-size{
+    position: relative;
+}
+.howto{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4.5rem 8% 2rem;
+    background: rgba(0, 0, 0, .88);
+    color: white;
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    line-height: 1.6;
+}
+.howto h2{
+    font-size: 1.5em;
+    margin-bottom: .75rem;
+}
+.howto ol{
+    padding-left: 1.25rem;
+}
+.howto-btn{
+    margin-top: 1.5rem;
+    align-self: center;
+    padding: .75rem 2rem;
+    border: .125rem solid white;
+    border-radius: 1.25rem;
+    background: rgb(12, 8, 70);
+    cursor: pointer;
+}
+.howto-toggle:checked ~ .screen-size .howto{
+    display: none;
+}
+.howto-toggle:not(:checked) ~ .screen-size label[class^="tile"]{
+    animation-play-state: paused;
+}
 
