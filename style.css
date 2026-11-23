@@ -12,6 +12,7 @@ body{
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
+    background-color: rgb(12, 8, 70);
 }
 
 body{
@@ -234,7 +235,7 @@ img{
 .box4{
     height: 1px;
     width: 1px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 .box4:checked + .tile4{
     
@@ -10425,10 +10426,40 @@ img{
 
 @keyframes motion {
     from{
-        top: -16.6667cqh;
+        top: -27cqh;
     }
     to{
-        top: calc(120.6cqh - 16.6667%);
+        top: calc(150.6cqh - 27%);
     }
+}
+label[class^="tile"]{
+        transition: opacity 0s linear 100000s;
+    }
+
+    label[class^="tile"]:active{
+        opacity: .5;
+        transition: none;
+    }
+
+label[class^="tile"]{
+    height: 27%;
+    top: -27%;
+    animation-duration: 1s;
+}
+label[class^="tile"]{
+    cursor: pointer;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+label[class^="tile"]::after{
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 0;
+    right: 0;
+    height: 25%;
 }
 
