@@ -10463,3 +10463,22 @@ label[class^="tile"]::after{
     height: 25%;
 }
 
+.aud{
+    display: block;
+    position: fixed;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(90vw, 20rem);
+    z-index: 20;
+}
+
+@supports selector(:playing){
+    label[class^="tile"]{
+        animation-play-state: paused;
+    }
+    .aud:playing ~ .screen-size label[class^="tile"]{
+        animation-play-state: running;
+    }
+}
+
