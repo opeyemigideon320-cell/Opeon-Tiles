@@ -10473,11 +10473,13 @@ label[class^="tile"]::after{
     z-index: 20;
 }
 
-label[class^="tile"]{
-    animation-play-state: paused;
-}
-.screen-size.is-playing label[class^="tile"]{
-    animation-play-state: running;
+@supports selector(:playing){
+    label[class^="tile"]{
+        animation-play-state: paused;
+    }
+    .aud:playing ~ .screen-size label[class^="tile"]{
+        animation-play-state: running;
+    }
 }
 .howto-toggle{
     display: none;
@@ -10517,7 +10519,7 @@ label[class^="tile"]{
     background: rgb(12, 8, 70);
     cursor: pointer;
 }
-.howto-toggle:checked ~ .screen-size .howto{4
+.howto-toggle:checked ~ .screen-size .howto{
     display: none;
 }
 .howto-toggle:not(:checked) ~ .screen-size label[class^="tile"]{
