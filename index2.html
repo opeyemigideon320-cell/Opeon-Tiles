@@ -880,5 +880,13 @@
         </div>
         </div>
     </div>
+    <script>
+        const audio = document.querySelector(".aud");
+        const game = document.querySelector(".screen-size");
+
+        audio.addEventListener("playing", () => game.classList.add("is-playing"));
+        audio.addEventListener("pause", () => game.classList.remove("is-playing"));
+        audio.addEventListener("ended", () => game.classList.remove("is-playing"));
+    </script>
 </body>
 </html>
